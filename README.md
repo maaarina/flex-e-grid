@@ -46,7 +46,7 @@ Estão dentro do arquivo de fonte `icones.ttf`. Para usar, primeiro importe a fo
 }
 ```
 
-> Cuidado com a localização do arquivo `icones.ttf`
+`icones.ttf`
 
 Camisas = `\e900`
 
@@ -78,6 +78,7 @@ Videos = `\e90e`
 
 Visualizacao = `\e90f`
 
+
 ## Espaçamentos
 
 Espaço interno botão: `8px`
@@ -89,6 +90,7 @@ Espaço entre elementos: `16px/8px`
 Espaçamento interno do corpo: `16px`
 
 Espaçamento entre o título do cartão de recentes e seus itens: `24px`
+
 
 ## Tamanhos
 
