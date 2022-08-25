@@ -37,10 +37,19 @@ body{
 .menu-lateral{
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: -100vw;
+    transition: .40s;
+
     width: 75vw;
     height: 100vh;
 
     background-color: #15191C;
+}
+
+.menu-lateral-ativo{
+    left: 0;
+    transition: .70s;
 }
 
 .menu-lateral-logo{
