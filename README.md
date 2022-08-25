@@ -67,7 +67,7 @@ Pico = `\e908`
 Picos = `\e909`
 
 Pinturas = `\e90a`
-
+ 
 Play = `\e90b`
 
 Relogio = `\e90c`
