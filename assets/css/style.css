@@ -110,10 +110,17 @@ body{
 
 .principal{
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 
 .titulo-principal{
     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.titulo-secao{
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -124,20 +131,31 @@ body{
     background-color: #2C343A;
 }
 
+.cartao_destaque{
+    margin-bottom: 16px;
+}
+
 .cartao-conteudo{
     padding: 16px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 8px;  /* grid-gap para ter o espaçamento igual em tudo*/
+}
+
+.cartao-destaque{
+    grid-column: span 2;
 }
 
 .cartao-titulo{
     font-size: 1.2rem;
     font-weight: 700;
+    grid-column: span 2;
 }
 
 .cartao-perfil{
     color: #95999C;
     font-size: 0.9rem;
+    grid-column: span 2;
 }
 
 .cartao-info{
@@ -146,12 +164,12 @@ body{
     color: #95999C;
 }
 
-.cartao-info-tempo{
+.cartao-info-tempo::before {
     content: "\e90c";
     margin-right: 8px;
 }
 
-.cartao-info-visualizacao{
+.cartao-info-visualizacao::before  {
     content: "\e90f";
     margin-right: 8px;
 }
@@ -165,6 +183,7 @@ body{
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem   ;
+    justify-self: flex-end;
 }
 
 .cartao-botao-play::before{
@@ -174,8 +193,14 @@ body{
 
 .cartao-botao-destaque{
     width: 100%;
+    grid-column: span 2;
 }
 
 .cartao-botao-destaque::before{
     margin-right: 8px;
+}
+
+.secao{
+    display: grid;
+    gap: 16px;
 }
